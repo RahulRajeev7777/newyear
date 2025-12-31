@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy New Year 💖</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.popup {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.popup h1 {
+    color: #ff4d6d;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    background: #ff4d6d;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="popup">
+    <h1>🎉 Happy New Year Nayanuz 🎉</h1>
+    <p>I made something special for you 💖</p>
+    <button onclick="showPhoto()">See it</button>
+
+    <div id="photo" style="display:none; margin-top:20px;">
+        <img src="photo.jpg" width="250" style="border-radius:20px;">
+    </div>
+</div>
+
+<script>
+function showPhoto() {
+    document.getElementById("photo").style.display = "block";
+}
+</script>
+
+</body>
+</html>
